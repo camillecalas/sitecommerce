@@ -3,3 +3,179 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Barlow';
+    font-size: 18px;
+    letter-spacing: 0.15em;
+}
+
+img{
+    display: block;
+    max-width: 100%;  /* Max width 100% mais si elle n'a plus la place, elle va se reduire */
+}
+
+/* LINK */
+a:link {
+    color: black;
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:visited  { color: black; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:hover { 
+    color:gray; 
+    text-decoration: none; 
+    background-color: transparent ;
+}
+
+ a:active {
+     color: black; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+
+/* BOUTON */
+button{
+    width: 201px;
+    height: 61px;
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Barlow';
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
+
+.bouton2{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* TITRES  & PARAGRAPHES*/
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 31px;
+}
+
+h2{
+    font-family: 'Barlow';
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    margin-bottom: 35px;
+}
+
+p{
+    margin-bottom: 35px;
+}
+
+
+/* DISPLAY */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* SECTION */
+section{
+    margin-bottom: 86px;
+}
+
+
+
+/************************* PAGE ACCUEIL *************************/
+/* **************************SECTION 1************************* */
+
+/* HEADER TOP */
+
+.headerTop{
+    background: #C4C4C4;
+    justify-content: space-between;
+    padding:  10px;
+}
+
+.fraisEnvois{
+    margin-bottom: 0;
+}
+
+/* HEADER */
+.header{
+    width: 95%; 
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* ACCUEIL */
+.accueil{
+    background: url('images/img_bg_accueil.png') no-repeat center / cover;
+    min-height: 784px;
+}
+
+
+
+/* **************************SECTION 2************************* */
+
+.section2{
+    gap: 170px;
+    flex-wrap: wrap-reverse;  
+}
+.description{
+    justify-content: flex-start;
+}
+
+/* **************************SECTION 3************************* */
+
+.maillot{
+background: url('images/img_section3_maillot.png') no-repeat center / cover;
+min-height:784px;
+}
+
+
+/* **************************SECTION 4************************* */
+
+.section4{
+    gap: 170px;
+    flex-wrap: wrap;  
+}
+
+/* **************************SECTION 5************************* */
+.navigationFooter {
+    display:flex;
+    gap:100px;
+}
+
+/* **************************SECTION 6************************* */
+
+.section6{
+    
+    margin-bottom: 0;
+    background: #454546;
+    padding: 10px 20px;
+    justify-content: flex-end;
+}
