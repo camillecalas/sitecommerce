@@ -16,7 +16,7 @@
 
 
     <!-- **********************SECTION 1*********************** -->
-    <section class="section1">
+    <section class="section1 landing">
 
         <!-- HEADER TOP -->
         <div class="headerTop flex">
@@ -51,18 +51,32 @@
 
         <div class="accueil flex column">
             <div class="accueilContainer flex column">
-                <h1 class="titreDeskstop">NOUVELLE COLLLECTION</h1>
+                <h1 class="titreDeskstop .big-text">NOUVELLE COLLLECTION</h1>
                 <h1 class="titreREsponsive">NOUVELLE <br>COLLLECTION</h1>
                 <button>DECOUVRIR</button>
             </div>
         </div>
     </section>
 
+    <div class="intro">
+        <div class="intro-text">
+            <img src="images/logo_geant.png" class="hide" alt="">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
 
 
     <!-- *********************SECTION 2********************* -->
-    <section class="section2 flex ">
-        <img src="images/img_top_accueil_section2.png" alt="image top">
+    <section class="section2 flex">
+        <div class="image"><img src="images/img_top_accueil_section2.png" alt="image top"></div>
         <div class="description flex column">
             <article>
                 <h2>NOUVEAUX TOPS</h2>
@@ -83,7 +97,7 @@
 
 
     <!-- *********************SECTION 4********************* -->
-    <section class="section4 flex">
+    <section class="section4 flex lazyload">
         <div class="description flex column">
             <article>
                 <h2>NOUVEAUX JEANS</h2>
@@ -91,12 +105,12 @@
                 <p class="bouton2">DECOUVRIR</button>
             </article>
         </div>
-        <img src="images/img_section4_jeans.png" alt="image jean">
+        <div class="image"><img src="images/img_section4_jeans.png" alt="image jean"></div>
     </section>
 
 
  <!-- *********************FOOTER********************* -->
-    <section class="section5 flex">
+    <section class="section5 flex lazyload">
             <ul class="liste flex">
                 <li href="#apropos">A PROPOS</li>
                 <li href="#aide">AIDE</li>
@@ -109,10 +123,16 @@
 
 
     <!-- *********************SECTION 6********************* -->
-     <section class="section6 flex">
+     <section class="section6 flex lazyload">
         <img class="insta" src="images/img_inst_logo.png" alt="insta logo">
      </section>
 
+
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+     crossorigin="anonymous"
+   ></script>
      <script src="main.js"></script>
 </body>
 </html>

@@ -11,18 +11,40 @@ menu.classList.toggle('menu-open');
 // menu.classList.toggle('menu-open');
 // })
 
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-
-// const images = document.querySelectorAll('.lazyload');
-
-// function handleIntersection(entries) {
-//    entries.map((entry) => {
-//      if (entry.isIntersecting) {
-//        entry.target.src = entry.target.dataset.src; entry.target.classList.add('loaded')
-//       observer.unobserve(entry.target);
-//    }
-//    });
-//  }
+tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
+tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".icones", { opacity: 0 }, { opacity: 1, duration: 1 });
+tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 0.2 });
 
 
 
+
+
+
+
+
+
+// let observer = new IntersectionObserver(function (observables) {
+
+//     observables.forEach(function(observable) {
+
+//         if (observable.intersectionRatio > 0.5) {
+
+//            observable.target.classList.remove('not-visible')
+        
+//             console.log('Item visible')
+//         }
+//     })
+// }, {
+// threshold: [0.5]
+// })
+
+// let items = document.querySelectorAll('.images')
+// items.forEach(function(item){
+//     item.classList.add('not-visible')
+//     observer.observe(item)
+// })
