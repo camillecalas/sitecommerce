@@ -9,90 +9,110 @@
     <title>Site E-commerce</title>
 </head>
 <body>
-    <!-- *********************PAGE ACCUEIL********************* -->
 
-    <!-- *********************SECTION 1********************* -->
+    <!-- ****************************************************** -->
+    <!-- *********************PAGE ACCUEIL********************* -->
+    <!-- ****************************************************** -->
+
+
+    <!-- **********************SECTION 1*********************** -->
     <section class="section1">
 
-        <!-- *********************HEADER TOP********************* -->
+        <!-- HEADER TOP -->
         <div class="headerTop flex">
             <img  class="logo flex" src="images/logo.png" alt="logo">
-            <p class="fraisEnvois flex column">FRAIS D’ENVOIS GRATUIT SUR LES COMMANDES DE PLUS 50E</p>
+            <p class="fraisEnvois flex">FRAIS D’ENVOIS GRATUIT SUR LES COMMANDES DE PLUS 50E</p>
         </div>
 
-     <!-- *********************HEADER********************* -->
-        <div class="header flex">
-            <nav clas="navigationAccueil flex">
-                <a href="#pretaporter">PRET A PORTER</a>
+        <!--    HEADER   -->
+        <header class="flex">
+            
+            <nav class="flex">
+                <a href="#pretaporter" class=>PRET A PORTER</a>
                 <a href="#bain">BAIN</a>
                 <a href="#accessoires">ACCESSOIRES</a>
             </nav>
+        
+            <!-- menu burger -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <img  class="logoCache flex" src="images/logo.png" alt="logo">
+
             <div class="icones flex">
                 <img src="images/logo_loupe.png" alt="loupe">
                 <img src="images/logo_panier.png" alt="panier">
             </div>
-        </div>
+        </header>
+
 
         <div class="accueil flex column">
-            <h1>NOUVELLE COLLLECTION</h1>
+            <div class="accueilContainer flex column">
+                <h1 class="titreDeskstop">NOUVELLE COLLLECTION</h1>
+                <h1 class="titreREsponsive">NOUVELLE <br>COLLLECTION</h1>
+                <button>DECOUVRIR</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- *********************SECTION 2********************* -->
+    <section class="section2 flex ">
+        <img src="images/img_top_accueil_section2.png" alt="image top">
+        <div class="description flex column">
+            <article>
+                <h2>NOUVEAUX TOPS</h2>
+                <p>Avec des mailles douces, des tissés <br>plus légers, des tops essentiels à <br>mélanger dans votre garde-robe.</p>
+                <p class="button2">DECOUVRIR</button>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- *********************SECTION 3********************* -->
+    <section class="section3">
+        <div class="maillot flex column">
+            <h1>MAILLOTS DE BAIN</h1>
             <button>DECOUVRIR</button>
         </div>
     </section>
 
-    <!-- *********************SECTION 2********************* -->
-<section class="section2 flex">
-    <img src="images/img_top_accueil_section2.png" alt="image top">
-    <div class="description flex column">
-    <article>
-        <h2>NOUVEAUX TOPS</h2>
-        <p>Avec des mailles douces, des tissés <br>plus légers, des tops essentiels à <br>mélanger dans votre garde-robe.</p>
-        <p class="bouton2">DECOUVRIR</button>
-    </article>
-    
-</div>
-</section>
 
-
- <!-- *********************SECTION 3********************* -->
-<section class="section3">
-
-    <div class="maillot flex column">
-        <h1>MAILLOTS DE BAIN</h1>
-        <button>DECOUVRIR</button>
-    </div>
-</section>
-
- <!-- *********************SECTION 4********************* -->
-
- <section class="section4 flex">
-    <div class="description flex column">
-    <article>
-        <h2>NOUVEAUX JEANS</h2>
-        <p>Avec des toiles écologique et <br>légères et des jeans à porter pour <br>toutes vos aventures.</p>
-        <p class="bouton2">DECOUVRIR</button>
+    <!-- *********************SECTION 4********************* -->
+    <section class="section4 flex">
+        <div class="description flex column">
+            <article>
+                <h2>NOUVEAUX JEANS</h2>
+                <p>Avec des toiles écologique et <br>légères et des jeans à porter pour <br>toutes vos aventures.</p>
+                <p class="bouton2">DECOUVRIR</button>
+            </article>
         </div>
-    </article>
-    <img src="images/img_section4_jeans.png" alt="image jean">
- </section>
+        <img src="images/img_section4_jeans.png" alt="image jean">
+    </section>
 
- <!-- *********************SECTION 5********************* -->
- <section class="section5">
- <div class="footer flex">
-    <nav clas="navigationFooter">
-        <a href="#apropos">A PROPOS</a>
-        <a href="#aide">AIDE</a>
-        <a href="#monCompte">MON COMPTE</a>
-        <a href="#serviceClient">SERVICE CLIENT</a>
-        <a href="#engagement">NOS ENGAGEMENTS</a>
-    </nav>
-    </div>
-</section>
-     <!-- *********************SECTION 6********************* -->
 
+ <!-- *********************FOOTER********************* -->
+    <section class="section5 flex">
+            <ul class="liste flex">
+                <li href="#apropos">A PROPOS</li>
+                <li href="#aide">AIDE</li>
+                <li href="#monCompte">MON COMPTE</li>
+                <li href="#serviceClient">SERVICE CLIENT</li>
+                <li href="#engagement">NOS ENGAGEMENTS</li>
+            </ul>
+   </section>
+    
+
+
+    <!-- *********************SECTION 6********************* -->
      <section class="section6 flex">
         <img class="insta" src="images/img_inst_logo.png" alt="insta logo">
      </section>
 
-
+     <script src="main.js"></script>
 </body>
 </html>
