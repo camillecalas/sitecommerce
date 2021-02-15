@@ -260,34 +260,6 @@ min-height:784px;
 
 
 
-/* ******************************************************* */
-/************************* 1140PX *************************/
-@media (max-width: 1140px){
-    /* ACCUEIL */
-.accueil{
-    background: url('images/img_accueil_left.png') no-repeat center / cover;
-}
-
-
-/* **************************SECTION 3************************* */
-.maillot{
-    background: url('images/img_section3_maillot_left.png') no-repeat center / cover;
-    }
-
-
-/* **************************SECTION 2************************* */
-.section2{
-    gap: 50px;
-}    
-
-
-/* **************************SECTION 4************************* */
-.section4{
-    gap: 50px;
-}
-}
-
-
 /* ****************************************************** */
 /************************* 822PX *************************/
 @media (max-width: 822px){

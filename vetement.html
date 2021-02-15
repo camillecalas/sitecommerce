@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vetement.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +14,7 @@
 
     <!-- HEADER TOP -->
     <div class="headerTop flex">
-        <img  class="logo" src="images/logo.png" alt="logo">
+        <a href="index.html"><img  class="logo" src="images/logo.png" alt="logo"></a>
         <p class="fraisEnvois flex column">FRAIS D’ENVOIS GRATUIT SUR LES COMMANDES DE PLUS 50E</p>
     </div>
 
@@ -45,25 +47,80 @@
 
 <!-- *********************SECTION 2********************* -->
 
+<div id="content-wrapper">
+		
 
+    <div class="column">
+        <img id=featured src="images/shoe1.jpg">
 
+        <div id="slide-wrapper" >
+            <!-- <img id="slideLeft" class="arrow" src="images/arrow-left.png"> -->
 
+            <div id="slider">
+                <img class="thumbnail active" src="images/femme_back.png">
+                <img class="thumbnail" src="images/femme_front.png">
+                <img class="thumbnail" src="images/femme_closeup.png">
 
+                <img class="thumbnail" src="images/femme_side.png">
+                <img class="thumbnail" src="images/femme_side_right.png">
+            
+            </div>
 
+            <!-- <img id="slideRight" class="arrow" src="images/arrow-right.png"> -->
+        </div>
+    </div>
 
-
-
-
-
-				<div class="Container">
-                    <img class="mainImage" src="images/img_product_front.png">
-                    <img class="thumbnail1 active" src="images/img_product_front2.png">
-					<img class="thumbnail2" src="images/img_product_back.png">
-					<img class="thumbnail3" src="images/img_product_right.png">
-					<img class="thumbnail4" src="images/img_product_left.png">
+    <div class=" flex column">
+        <h2>ROBE LAURA</h1>
+        <p>49,50</p>
+            <div class="rectKaki"></div>
+            <p>COULEUR KAKI</p>
+         
+                <h3>TAILLE</h3>
+                    <div class="taille flex">
+                    <div class="s">S</div>
+                    <div class="m">M</div>
+                    <div class="l">L</div>
+                    <div class="xl">XL</div>
                 </div>
+        <button>ACHETER</button>
+                <p>DESCRIPTION <b>+</b></p>
+                <p>COMPOSITION <b>+</b></p>
 
 
-<script src="vetement.css"></script>
+    </div>
+</div>
+
+
+<!-- *********************FOOTER********************* -->
+<section class="section5 flex">
+    <ul class="liste flex">
+        <li href="#apropos">A PROPOS</li>
+        <li href="#aide">AIDE</li>
+        <li href="#monCompte">MON COMPTE</li>
+        <li href="#serviceClient">SERVICE CLIENT</li>
+        <li href="#engagement">NOS ENGAGEMENTS</li>
+    </ul>
+</section>
+
+
+
+<!-- *********************SECTION 6********************* -->
+<section class="section6 flex">
+<img class="insta" src="images/img_inst_logo.png" alt="insta logo">
+</section>
+
+
+
+
+
+	
+
+
+
+
+
+
+<script src="vetement.js"></script>
 </body>
 </html>
