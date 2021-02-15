@@ -115,6 +115,8 @@ section{
 /* ************************************************************ */
 
 
+/* **********************ANIMATION-INTO*********************** */
+
 .intro {
     background:#C4C4C4;
     position: fixed;
@@ -143,11 +145,6 @@ section{
     overflow: hidden;
   }
 
-.big-text{
-    position: absolute;
-    transform: translate(-50%, -30%);
-}
-
 
 
 
@@ -163,12 +160,16 @@ section{
 
 .section1 .headerTop .fraisEnvois{
     font-size: 12px;
-    align-self: center;
+    text-align: center;
     margin-bottom: 0;
 }
 
-/* HEADER */
+.section1 .headerTop .logo{
+    display: block;
+    align-self: center;
+}
 
+/* HEADER */
 .logoCache{
 display:none;
 }
@@ -207,8 +208,6 @@ display:none;
 
 
 /* **************************SECTION 2************************* */
-
-
 .section2{
     gap: 170px;
     flex-wrap: wrap-reverse;  

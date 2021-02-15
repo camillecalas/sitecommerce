@@ -140,3 +140,139 @@ section{
     grid-row: 4;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************** */
+/************************* MEDIA QUERIES *************************/
+/* ************************************************************* */
+
+
+
+/* ******************************************************* */
+/************************* 1140PX *************************/
+@media (max-width: 1140px){
+    /* ACCUEIL */
+.accueil{
+    background: url('images/img_accueil_left.png') no-repeat center / cover;
+}
+
+
+
+
+/* ****************************************************** */
+/************************* 822PX *************************/
+@media (max-width: 822px){
+
+    /* **************************SECTION 1************************* */
+    /* HEADER TOP */
+    .headerTop{
+        justify-content: center;
+        padding:  10px 20px;
+    } 
+
+    .section1 .headerTop .logo{
+    display: none;
+    } 
+
+
+    /* HEADER */
+    .logoCache{
+        display:flex;
+        }
+
+
+    .section1 header{
+        padding: 3px 50px;
+        justify-content: space-between;
+    }
+
+    .section1 header .icones{
+        gap: 20px;
+    }
+
+
+    /* BURGER */
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger span{
+        width: 30px;
+        height: 3px;
+        background:#434141;
+        border-radius: 54px;
+        margin: 6px 0;
+        display: block;  /* span sont des elements de types inline, display block permet de les faire prendre toutes la largeur et de commencer a la ligne */
+    }
+      
+    .burger{
+        padding: 10px;
+        z-index: 1; 
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0; 
+        background: white;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center !important;
+        transform: translateY(-100%);  /* translateX je deplace de 100% de sa taille vers la droite  -- -100% ca irait vers la gauche  - si on met Y ca change l'axe vers le haut ou le bas*/
+        transition: .5s;
+    }
+
+    .menu-open{
+        transform: translateY(0); /* quand je clique mon menu revient en position normal */
+    }
+
+
+
+}
+
+
+/* ****************************************************** */
+/************************* 375PX *************************/
+@media (max-width: 400px){
+    /* ACCUEIL */
+    .accueil{
+        background: url('images/img_accueil_phone.png') no-repeat center / cover;
+    }
+
+    .accueilContainer{
+        border: 4px solid red;
+        justify-content: center;
+    }
+
+    .titreREsponsive{
+        display: flex;
+    }
+
+    .titreDeskstop{
+        display: none;
+    }
+
+        /* HEADER */
+        .logoCache{
+            display:flex;
+            }
+        .section1 header nav {
+            display: none;
+        }
+    
+        .section1 header{
+            padding: 3px 10px;
+            justify-content: space-between;
+        }
+
+}
