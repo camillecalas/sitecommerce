@@ -123,7 +123,6 @@ section{
   }
   
 
-
 /* HEADER TOP */
 .headerTop{
     background: #C4C4C4;
@@ -180,14 +179,11 @@ display:none;
 	align-items: center;
 }
 
-/* .column{
-	width: 600px;
-	padding: 10px;
-} */
 
 #featured{
-	max-width: 500px;
+    overflow: hidden; 
 	max-height: 600px;
+    height: auto;
 	object-fit: cover;
 	cursor: pointer;
 }
