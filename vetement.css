@@ -111,6 +111,51 @@ section{
 /************************* PAGE VETEMENT*************************/
 /* ************************************************************ */
 
+/* **********************MENU DESKSTOP*********************** */
+.menuCache{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background: white;
+    height: min(50%, auto);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center !important;
+    transform: translateY(-100%);  
+    transition: .5s;
+    z-index: 15;
+}
+
+.menuCache_open{
+    transform: translateY(0); 
+}
+
+ul{
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.insideMenu {
+    margin:122px;
+    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/* .dropdown{
+z-index: 15; 
+} */
+
+.semiBold{
+    font-weight: 500;
+} 
 
 
 /* **************************SECTION 1************************* */
@@ -122,12 +167,12 @@ section{
     width: 100%
   }
   
-
   #myHeader{
-      z-index: 3;
+      z-index: 33;
   }
 
-/* HEADER TOP */
+
+
 /* HEADER TOP */
 .headerTop{
     background: #C4C4C4;
@@ -138,6 +183,7 @@ section{
 .section1 .headerTop .fraisEnvois{
     font-size: 12px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 
@@ -195,6 +241,7 @@ display:none;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+    /* z-index: -2; */
 }
 
 
@@ -312,6 +359,10 @@ display:none;
 @media (max-width: 822px){
 
     /* **************************SECTION 1************************* */
+    .menuCache{
+        display: none;
+            }
+
     /* HEADER TOP */
     .headerTop{
         justify-content: center;
@@ -382,6 +433,15 @@ display:none;
         font-size: 12px;
         margin-bottom: 20px;
      }
+     /* **************************SECTION 2************************* */
+#content-wrapper{
+    margin-top: 40px;
+    display: flex;
+	flex-wrap: wrap;
+    gap: 50px;
+	justify-content: center;
+	align-items: center;
+}
 
 }
 

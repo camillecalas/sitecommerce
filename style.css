@@ -126,6 +126,7 @@ section{
     justify-content: center !important;
     transform: translateY(-100%);  
     transition: .5s;
+    z-index: -1;
 }
 
 .menuCache_open{
@@ -152,7 +153,7 @@ li{
 
 
 .dropdown{
-z-index: 1; 
+z-index: 10; 
 }
 
 .semiBold{
@@ -198,13 +199,13 @@ z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
+    
   }  
   
-/* #myHeader{
-position: sticky;
-top: 0;
+#myHeader{
+
 z-index: 33;
-}
+}  
 
 /* **************************SECTION 1************************* */
 
@@ -357,6 +358,7 @@ min-height:784px;
     .menuCache{
 display: none;
     }
+
     /* HEADER TOP */
     .headerTop{
         justify-content: center;

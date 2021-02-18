@@ -112,6 +112,52 @@ section{
 /************************* PAGE ACCUEIL *************************/
 /* ************************************************************ */
 
+/* **********************MENU DESKSTOP*********************** */
+.menuCache{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background: white;
+    height: min(50%, auto);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center !important;
+    transform: translateY(-100%);  
+    transition: .5s;
+    z-index: -1;
+}
+
+.menuCache_open{
+    transform: translateY(0); 
+}
+
+ul{
+    list-style: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.insideMenu {
+    margin:122px;
+    gap: 60px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.dropdown{
+z-index: 1; 
+}
+
+.semiBold{
+    font-weight: 500;
+} 
+
 
 /* **********************STICKY*********************** */
 
@@ -386,6 +432,9 @@ display:none;
 @media (max-width: 822px){
 
    /* **************************SECTION 1************************* */
+   .menuCache{
+    display: none;
+        }
    /* HEADER TOP */
    .headerTop{
        justify-content: center;

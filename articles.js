@@ -17,22 +17,19 @@ liens.forEach(lien =>{
 
 
 // MENU CACHE
+const menuCache = document.querySelector('.menuCache');
+const dropdown =document.querySelector('.dropdown');
 
-// const menuCache = document.querySelector('.menuCache');
-// const dropdown =document.querySelector('.dropdown');
+dropdown.addEventListener('mouseenter', function(){
+  menuCache.classList.add('menuCache_open');
+  });
 
+menuCache.addEventListener('mouseleave', function(){
+  menuCache.classList.remove('menuCache_open');
+  });
 
-// dropdown.addEventListener('mouseenter', function(){
-//   menuCache.classList.add('menuCache_open');
-//   });
-
-// menuCache.addEventListener('mouseleave', function(){
-//   menuCache.classList.remove('menuCache_open');
-//   });
-
-// links.forEach(link =>{
-//     link.addEventListener('click', function(){
-//       dropdown.classList.remove('menu-open');
-//     })
-//   });
-  
+links.forEach(link =>{
+    link.addEventListener('click', function(){
+      dropdown.classList.remove('menu-open');
+    })
+  });

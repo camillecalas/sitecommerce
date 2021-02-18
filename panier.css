@@ -136,13 +136,19 @@ section{
     text-align: center;
 }
 
-
-.section1 .headerTop .logo{
+.accueilLogo {
     position: absolute;
     left: 122px;
     display: block;
     align-self: center;
 }
+
+/* .section1 .headerTop .logo{
+    position: absolute;
+    left: 122px;
+    display: block;
+    align-self: center;
+} */
 
 /* HEADER */
 .logoCache{

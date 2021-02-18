@@ -15,6 +15,10 @@ liens.forEach(lien =>{
 });
 
 
+
+
+
+
 // SCROLL HEADER
 
 window.onscroll = function() {myFunction()};
@@ -56,6 +60,25 @@ for (var i=0; i < thumbnails.length; i++){
         document.getElementById('featured').src = this.src
     })
 }
+
+
+// MENU CACHE
+const menuCache = document.querySelector('.menuCache');
+const dropdown =document.querySelector('.dropdown');
+
+dropdown.addEventListener('mouseenter', function(){
+  menuCache.classList.add('menuCache_open');
+  });
+
+menuCache.addEventListener('mouseleave', function(){
+  menuCache.classList.remove('menuCache_open');
+  });
+
+links.forEach(link =>{
+    link.addEventListener('click', function(){
+      dropdown.classList.remove('menu-open');
+    })
+  });
 
 
 // let buttonRight = document.getElementById('slideRight');
