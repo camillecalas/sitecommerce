@@ -3,10 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="panier.css">
     <title>Site E-commerce</title>
 </head>
 <body>
-    
+    <!-- ****************************************************** -->
+    <!-- *********************PAGE ACCUEIL********************* -->
+    <!-- ****************************************************** -->
+
+
+    <!-- **********************SECTION 1*********************** -->
+    <section class="section1 landing">
+
+        <div  id="myHeader">
+            <!-- HEADER TOP -->
+            <div class="headerTop flex">
+                <img  class="logo icones" src="images/logo.png" alt="logo">
+                <p class="fraisEnvois flex column icones">FRAIS D’ENVOIS GRATUIT SUR LES COMMANDES DE PLUS 50E</p>
+            </div>
+
+ <!--    HEADER   -->
+ <header class="flex">
+                
+    <nav class="flex dropdown">
+            <a href="panier.html" class="link">/ PANIER</a>    
+    </nav>
+
+        <!-- menu burger -->
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <a href="index.html"><img  class="logoCache flex" src="images/logo.png" alt="logo"></a>
+
+        <div class="icones flex">
+            <img src="images/logo_loupe.png" alt="loupe">
+            <img src="images/logo_panier.png" alt="panier">
+        </div>
+    </header>
+</div>
+
+
+
+</section>
+
+
+    <!-- DEBUT CODE KENDRA -->
+<div class="container flex">
+
+    <img src="images/Rectangle67.png" alt="photo article">
+
+    <div class="robeDes flex column">
+        <h3>ROBE MARIE</h3>
+        <p>Robe intemporelle, modèle mi-long, vert kaki, boutons sur le devant.</p> 
+        <p>Taille : L</p>
+    </div>
+
+    <div class="prix flex column"> 
+        <img src="images/poubelle.png" alt="poubelle" class="imgPoubelle">
+        <p>45,50 €</p>
+    </div>
+ 
+</div>
+
+<hr class="flex">
+
+
+<div class="container flex">
+    <img src="images/robemetis.png" alt="photo de robe">
+
+    <div class="robeDes flex column">
+        <h3>ROBE LUNA</h3>
+        <p> Robe d'été courte, légère et fluide, imprimé fleuri, lien dans le dos.</p>
+        <p>Taille: L</p>
+    </div>
+
+    <div class="prix flex column">
+        <img src="images/poubelle.png" alt="poubelle" class="imgPoubelle">
+        <p>39,50 €</p>
+    </div>
+</div>
+
+<hr>
+
+
+<div class="partiePaie flex">
+    <p class="button2" ><a href="articles.html" >< Continuez vos achats</a></p>
+    <div class="part2 flex column"> 
+        <p> > Livraison offerte</p>
+        <p><b>Total: 85,00 €</b></p>
+        <div class="codePromo">
+            <label for="Code">Code Promo :</label>
+            <input type="text">
+        </div>  
+        <button><a href="payement.html">COMMANDER</a></button>
+    </div>
+</div>
+
+<script src ="panier.js"></script>
 </body>
 </html>

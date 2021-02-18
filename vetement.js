@@ -1,3 +1,20 @@
+// MENU BURGER
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('nav');
+const liens = document.querySelectorAll('nav a')
+
+burger.addEventListener('click', function(){
+menu.classList.toggle('menu-open');
+});
+
+liens.forEach(lien =>{
+  lien.addEventListener('click', function(){
+    menu.classList.remove('menu-open');
+  })
+});
+
+
 // SCROLL HEADER
 
 window.onscroll = function() {myFunction()};
@@ -33,7 +50,8 @@ for (var i=0; i < thumbnails.length; i++){
         if (activeImages.length > 0){
             activeImages[0].classList.remove('active')
         }
-  
+        
+
         this.classList.add('active')
         document.getElementById('featured').src = this.src
     })

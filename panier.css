@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Barlow';
+    font-size: 18px;
+    letter-spacing: 0.15em;
+}
+
+img{
+    display: block;
+    max-width: 100%;  /* Max width 100% mais si elle n'a plus la place, elle va se reduire */
+}
+
+/* LINK */
+a:link {
+    color: black;
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:visited  { color: black; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+
+a:hover { 
+    color:gray; 
+    text-decoration: none; 
+    background-color: transparent ;
+}
+
+
+/* BOUTON */
+button{
+    width: 201px;
+    height: 61px;
+    background: #C4C4C4;
+    border: none;
+    font-family: 'Barlow';
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
+
+.button2{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* TITRES  & PARAGRAPHES*/
+h1{
+    font-weight: bold;
+    font-size: clamp(20px, 13vw, 30px);
+    color: #FFFFFF;
+    margin-bottom: 31px;
+}
+
+h2{
+    font-family: 'Barlow';
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    margin-bottom: 35px;
+}
+
+h3{
+    font-family: 'Barlow';
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+
+/* DISPLAY */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.column{
+    flex-direction: column;
+}
+
+
+/* SECTION */
+section{
+    margin-bottom: 86px;
+}
+
+
+/* ************************************************************ */
+/************************* PAGE ACCUEIL *************************/
+/* ************************************************************ */
+
+
+
+
+  /* **********************STICKY*********************** */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  } 
+  
+
+
+/* **************************SECTION 1************************* */
+.headerTop{
+    background: #C4C4C4;
+    justify-content: center;
+    padding:  15px 122px;
+}
+
+.section1 .headerTop .fraisEnvois{
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.section1 .headerTop .logo{
+    position: absolute;
+    left: 122px;
+    display: block;
+    align-self: center;
+}
+
+/* HEADER */
+.logoCache{
+display:none;
+}
+
+.section1 header{
+    background: white;
+    width: 100%; 
+    padding: 10px 122px;
+    justify-content: space-between;
+}
+
+.section1 header nav {
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.section1 header .icones{
+    gap: 50px;
+}
+
+.burger{
+    display: none;
+}
+
+
+
+
+
+
+
+/* **************************SECTION 2************************* */
+.container{
+    padding: 82px;
+    justify-content: space-between; 
+    color: #434242;
+    line-height: 22px;
+    letter-spacing: 0.15em;
+    flex-wrap: wrap;
+}
+
+.imgPoubelle{
+    cursor: pointer;
+}
+
+
+.robeDes{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.prix{
+     justify-content: center; 
+     align-items: center; 
+     gap: 20px;
+    font-weight: 700;
+}
+
+hr{
+    width: auto;
+    position: center;
+    margin-right: 86px;
+    margin-left: 86px;
+} 
+
+.versachats{
+    padding-top: 20px;
+    font-family: 'barlow';
+}
+
+.part2{
+justify-content: flex-start; 
+align-items: flex-start;
+gap: 12px;
+}
+
+
+
+.partiePaie{
+    padding: 86px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* ************************************************************** */
+/************************* MEDIA QUERIES *************************/
+/* ************************************************************* */
+
+
+
+/* ****************************************************** */
+/************************* 822PX *************************/
+@media (max-width: 822px){
+
+    /* **************************SECTION 1************************* */
+    /* HEADER TOP */
+    .headerTop{
+        justify-content: center;
+        padding:  10px 20px;
+    } 
+
+    .section1 .headerTop .logo{
+    display: none;
+    } 
+
+
+    /* HEADER */
+    .logoCache{
+        display:flex;
+        }
+
+
+    .section1 header{
+        padding: 3px 50px;
+        justify-content: space-between;
+    }
+
+    .section1 header .icones{
+        gap: 20px;
+    }
+
+
+    /* BURGER */
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger span{
+        width: 30px;
+        height: 3px;
+        background:#434141;
+        border-radius: 54px;
+        margin: 6px 0;
+        display: block;  /* span sont des elements de types inline, display block permet de les faire prendre toutes la largeur et de commencer a la ligne */
+    }
+      
+    .burger{
+        padding: 10px;
+        z-index: 1; 
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0; 
+        background: white;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center !important;
+        transform: translateY(-100%);  /* translateX je deplace de 100% de sa taille vers la droite  -- -100% ca irait vers la gauche  - si on met Y ca change l'axe vers le haut ou le bas*/
+        transition: .5s;
+    }
+
+    .menu-open{
+        transform: translateY(0); /* quand je clique mon menu revient en position normal */
+    }
+
+ /* **************************SECTION 2************************* */
+
+ h3{
+    align-self: center;
+}
+
+ .container{
+    padding: 40px;
+    gap: 50px;
+    justify-content: center;
+}
+
+hr{
+    margin-right: 40px;
+    margin-left: 40px;
+} 
+
+.versachats{
+    padding-top: 20px;
+    font-family: 'barlow';
+}
+
+.part2{
+justify-content: flex-start; 
+align-items: flex-start;
+gap: 12px;
+}
+
+
+
+.partiePaie{
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+
+.button2{
+    display:  none;
+}
+
+
+.prix{
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+   font-weight: 700;
+}
+
+
+p{
+    margin-bottom: 0px;
+}
+
+/* SECTION */
+section{
+    margin-bottom: 40px;
+}
+
+button{
+    align-self: center;
+}
+
+}
+
+
+/* ****************************************************** */
+/************************* 375PX *************************/
+@media (max-width: 400px){
+    /* ACCUEIL */
+
+
+    .accueilContainer{
+        justify-content: center;
+    }
+
+        /* HEADER */
+        .logoCache{
+            display:flex;
+            }
+        .section1 header nav {
+            display: none;
+        }
+    
+        .section1 header{
+            padding: 3px 10px;
+            justify-content: space-between;
+        }
+
+}

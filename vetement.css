@@ -20,7 +20,7 @@ img{
     max-width: 100%;  /* Max width 100% mais si elle n'a plus la place, elle va se reduire */
 }
 
-/* LINK */
+/* LINK  */
 a:link {
     color: black;
     text-decoration: none; 
@@ -43,7 +43,7 @@ a:hover {
 button{
     width: 201px;
     height: 61px;
-    background: #CBBFBF;
+    background: #C4C4C4;
     border: none;
     font-family: 'Barlow';
     font-size: 18px;
@@ -108,7 +108,7 @@ section{
 
 
 /* ************************************************************ */
-/************************* PAGE ACCUEIL *************************/
+/************************* PAGE VETEMENT*************************/
 /* ************************************************************ */
 
 
@@ -123,23 +123,38 @@ section{
   }
   
 
+  #myHeader{
+      z-index: 3;
+  }
+
+/* HEADER TOP */
 /* HEADER TOP */
 .headerTop{
     background: #C4C4C4;
-    justify-content: space-between;
-    padding:  10px 122px;
+    justify-content: center;
+    padding:  15px 122px;
 }
 
 .section1 .headerTop .fraisEnvois{
     font-size: 12px;
-    text-align: center;
     margin-bottom: 0;
 }
 
-.section1 .headerTop .logo{
+
+/* .section1 .headerTop .logo{
+    position: absolute;
+    left: 122px;
+    display: block;
+    align-self: center;
+} */
+
+.accueilLogo {
+    position: absolute;
+    left: 122px;
     display: block;
     align-self: center;
 }
+
 
 /* HEADER */
 .logoCache{
@@ -148,8 +163,6 @@ display:none;
 
 .section1 header{
     background: white;
-    position: fixed;
-
     width: 100%; 
     padding: 10px 122px;
     justify-content: space-between;
@@ -166,6 +179,11 @@ display:none;
 
 .burger{
     display: none;
+}
+
+
+.icones{
+    cursor: pointer;
 }
 
 
@@ -212,9 +230,11 @@ display:none;
 	align-items: center;
     justify-content: center;
     flex-wrap: wrap-reverse;
+    z-index: 0;
 }
 
 #slider{
+  
 	width: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -222,7 +242,6 @@ display:none;
 }
 
 .containerDescription{
-    border: 4px solid red;
     justify-content: center;
 	width: 600px;
 	padding: 10px;
@@ -252,6 +271,9 @@ display:none;
 }
 
 
+/* ************************************************************ */
+/* ****************BOTTOM************************* */
+/* ************************************************************ */
 /* **************************SECTION 5************************* */
 .section5{
     margin-top: 125px;
@@ -334,10 +356,11 @@ display:none;
       
     .burger{
         padding: 10px;
-        z-index: 1; 
+        z-index: 10; 
     }
 
     nav{
+      z-index: 2;
         position: fixed;
         top: 0;
         left: 0; 
@@ -354,10 +377,47 @@ display:none;
         transform: translateY(0); /* quand je clique mon menu revient en position normal */
     }
 
-
+       /* FOOTER */
+       .section5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+     }
 
 }
 
+/* ****************************************************** */
+/************************* 600PX *************************/
+@media (max-width: 600px){
+    section{
+        margin-bottom: 70px;
+    }
+
+    #content-wrapper{
+        margin-bottom: 80px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FOOTER */
+    .section5 {
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        gap: 3px;
+
+        }
+
+        .section5>* {
+            flex: 0 0 50%;
+        }
+
+
+  
+    }
 
 
 

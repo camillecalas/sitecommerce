@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="payement.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-------------------------- header----------------------------->
+
+
+<header class="logo flex"> 
+    <a href="index.html"><img src="images/logo_payement.png"></a>
+</header>
+
+
+
+<!--------------------- section 1----------------------------->
+<section class="section1 flex column">
+    <div>
+            <div class="gdTitre">
+                <p class="titre">Informations</p>
+                <p class="sous-titre">Vos coordonnées</p>
+            </div>
+
+            <div class="form flex column">
+                <input class="input1" type="text" name="adresseemail" id="adresseemail" 
+                placeholder="ADRESSE E-MAIL">
+
+                <span class="border">
+                    <input type="checkbox" id="offres" name="offres">
+                    <label for="scales">Recevoir nos offres promotionnelles et nouveautés</label>
+                </span>
+                <br>
+                <span class="aCote flex">
+                    <input class="input2" type="text" name="nom" id="nom"
+                    placeholder="NOM">
+                    <input class="input2" type="text" name="prenom" id="prenom"
+                    placeholder="PRÉNOM">
+                </span>
+
+                <input class="input1" type="text" name="rue" id="rue"
+                placeholder="RUE ET NUMERO"> 
+
+                <span class="aCote flex">
+                    <input class="input2" type="text" name="ville" id="ville" placeholder="VILLE">
+                    <input class="input2" type="text" name="code" id="code" placeholder="CODE POSTAL"> 
+                </span>
+
+                <span class="border">Adresse 
+                    <input type="checkbox" id="adresse1" name="a1">
+                    <label for="scales">d'expédition</label>
+                    <input type="checkbox" id="adresse2" name="ad2">
+                    <label for="scales">de facturation</label>
+                </span>
+                <input class="input2 tel" type="text" name="tel" id="tel" placeholder="# TÉLÉPHONE">
+            </div>
+            <p> <a href="panier.html">< Retourner au panier</a></p> 
+            <!-- ancre page kendra -->
+    </div>
+</section>
+
+
+
+
+
+<!--------------------- section 2 ------------------------->
+<!-- choix paiement -->
+<section class="section2 flex column">
+    <div class="part1 flex column">
+        <span class="gdTitre">
+            <p class="titre">Paiement<p>
+            <p class="sous-titre">Choisissez un moyen de paiement<p>
+        </span>
+
+        <div class="form aCote flex">
+            <div class="border2">
+                <input class="input3" type="radio" id="cb" name="cb" checked>
+                <label for="scales">CB</label>
+            </div>
+            <div class="border2">
+                <input class="input3" type="radio" id="paypal" name="paypal">
+                <label for="scales">PAYPAL</label>
+            </div>
+        </div>
+    </div>
+    
+  
+    <!--Carte  -->
+    <div class="formulaire flex column">
+        <div class="moyP">
+            <input class="input" type="checkbox" id="enregistrer" name="register">
+            <label for="scales">Enregistrer ce moyen de paiement</label>
+        </div>
+        
+        <span class="icon"><img src="images/card2.png"></span>
+        <span class="icon2"><img src="images/visa.png"></span> 
+        <input class="input1 radius" type="card" name="9070" id="card1" placeholder="•••• •••• •••• 9070"> 
+        
+        <span>
+            <span class="icon3"><img src="images/calendar.png"></span>
+            <input class="input2 radius" type="text" name="expiration" id="tel" placeholder="DATE D'EXPIRATION">    
+            <span class="icon4"><img src="images/cvv.png"></span>  
+            <input class="input2 radius" type="cal" name="cvv" id="cvv" placeholder="CVV"> 
+        </span>
+        
+        <button><a href="">PAYER</a></button>
+        
+    </div>
+   
+</section>
+
+          
+</body>
+</html>
