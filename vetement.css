@@ -309,10 +309,12 @@ display:none;
 } */
 
 .taille{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     cursor: pointer;
-    gap: 40px;
+    gap: 30px;
    }
 .s{
     grid-column-start: 1;
