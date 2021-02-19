@@ -312,7 +312,7 @@ display:none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     cursor: pointer;
-    gap: 20px;
+    gap: 40px;
    }
 .s{
     grid-column-start: 1;
