@@ -303,9 +303,29 @@ display:none;
     margin-bottom: 10px;
 }
 
-.taille{
-   gap: 40px;
+/* .taille{
+ gap: 40px;
    cursor: pointer;
+} */
+
+.taille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    cursor: pointer;
+   }
+.s{
+    grid-column-start: 1;
+}
+.m{
+    grid-column-start: 2;
+}
+
+.l{
+    grid-column-start: 3;
+}
+
+.xl{
+    grid-column-start: 4;
 }
 
 .containerIndication{
