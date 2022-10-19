@@ -1,3 +1,4 @@
-# sitecommerce
+# Site Vitrine Ecommerce (Front only)
 
-Creation of a showcase site as part of the Hackeuse training at Simplon, Paris.
+Creation of a showcase website as part of the Hackeuse training at Simplon, Paris.
+
